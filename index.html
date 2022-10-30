@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>서울도서관</title>
+    <link rel="shortcut icon" href="images/favicon2.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- noto-sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <script>
+        AOS.init();
+    </script>
+
+    <div class="header">
+        <div class="nav">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+            </div>
+            <div class="nav-wrap">
+                <ul class="main-nav">
+                    <li class="nav-name">
+                        <a href="#">전자도서관</a>
+                        <div class="sub">
+                            <ul class="sub-nav">
+                                <li>
+                                    <a href="#">전자도서관</a>
+                                    <ul class="nav-detail">
+                                        <li><a href="#">전자책·오디오북</a></li>
+                                        <li><a href="#">전자잡지</a></li>
+                                        <li><a href="#">구독학술 DB</a></li>
+                                        <li><a href="#">협력기관 DB</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>    
+                    </li>
+                    <li class="nav-name">
+                        <a href="#">도서관이용</a>
+                        <div class="sub">
+                            <ul class="sub-nav">
+                                <li>
+                                    <a href="#">이용안내</a>
+                                    <ul class="nav-detail">
+                                        <li><a href="#">도서관 이용시간</a></li>
+                                        <li><a href="#">회원증발급</a></li>
+                                        <li><a href="#">대출·반납·연장·예약  </a></li>
+                                        <li><a href="#">보존서고 자료</a></li>
+                                        <li><a href="#">시설·기기 이용</a></li>
+                                        <li><a href="#">도서관 이용예절</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">자료실안내</a>
+                                    <ul class="nav-detail">
+                                        <li><a href="#">일반자료실</a></li>
+                                        <li><a href="#">디지털자료실</a></li>
+                                        <li><a href="#">서울자료실</a></li>
+                                        <li><a href="#">세계자료실</a></li>
+                                        <li><a href="#">장애인자료실</a></li>
+                                        <li><a href="#">스마트도서관</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">전시·프로그램</a>
+                                    <ul class="nav-detail">
+                                        <li><a href="#">서울디지털사회혁신센터</a></li>
+                                        <li><a href="#">서울기록문화관</a></li>
+                                        <li><a href="#">옛시장실 복원공간</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">함께하는 서비스</a>
+                                    <ul class="nav-detail">
+                                        <li><a href="#">책이음 서비스</a></li>
+                                        <li><a href="#">책바다 서비스</a></li>
+                                        <li><a href="#">책바다 서비스</a></li>
+                                        <li><a href="#">외국학술지 원문복사</a></li>
+                                        <li><a href="#">사서에게 물어보세요</a></li>
+                                        <li><a href="#">도서관 정보나루</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-name">
+                        <a href="#">신청·참여</a>
+                        <div class="sub">
+                            <ul class="sub-nav">
+                                <li>
+                                    <a href="#">신청</a>
+                                    <ul class="nav-detail">
+                                        <li><a href="#">희망도서 신청</a></li>
+                                        <li><a href="#">회원증발급</a></li>
+                                        <li><a href="#">프로그램 신청</a></li>
+                                        <li><a href="#">단체방문 신청</a></li>
+                                        <li><a href="#">자원봉사 신청</a></li>
+                                        <li><a href="#">분실물 찾기</a></li>
+                                        <li><a href="#">독서인생샷 신청</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">시민과 함께하는 도서관</a>
+                                    <ul class="nav-detail">
+                                        <li><a href="#">도서관 위원회</a></li>
+                                        <li><a href="#">독서동아리 활성화 지원</a></li>
+                                        <li><a href="#">책방 활성화</a></li>
+                                        <li><a href="#">서울지식이음축제·포럼</a></li>
+                                        <li><a href="#">책읽는 서울광장</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">참여</a>
+                                    <ul class="nav-detail">
+                                        <li><a href="#">서울도서관에 바란다</a></li>
+                                        <li><a href="#">자주 물어보는 질문</a></li>
+                                        <li><a href="#">서울에게 물어보세요</a></li>
+                                        <li><a href="#">자료기증 · 납본</a></li>
+                                        <li><a href="#">설문조사</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-name">
+                        <a href="#">도서관 소개</a>
+                        <div class="sub">
+                            <ul class="sub-nav">
+                                <li>
+                                    <a href="#">도서관 소개</a>
+                                    <ul class="nav-detail">
+                                        <li><a href="#">인사말</a></li>
+                                        <li><a href="#">일반 현황</a></li>
+                                        <li><a href="#">상징</a></li>
+                                        <li><a href="#">조직 · 기구</a></li>
+                                        <li><a href="#">운영규정</a></li>
+                                        <li><a href="#">찾아오시는 길</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">도서관 소식</a>
+                                    <ul class="nav-detail">
+                                        <li><a href="#">공지사항</a></li>
+                                        <li><a href="#">보도자료</a></li>
+                                        <li><a href="#">도서관 갤러리</a></li>
+                                        <li><a href="#">세계자료실</a></li>
+                                        <li><a href="#">서울도서관 TV</a></li>
+                                        <li><a href="#">e-소식드림</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">도서관 일정</a>
+                                    <ul class="nav-detail">
+                                        <li><a href="#">일정 및 행사</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-name">
+                        <a href="#">도서관 정책</a>
+                        <div class="sub">
+                            <ul class="sub-nav">
+                                <li>
+                                    <a href="#">정책비전체계</a>
+                                    <ul class="nav-detail">
+                                        <li><a href="#">정책비전체계</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">도서관 지원·협력</a>
+                                    <ul class="nav-detail">
+                                        <li><a href="#">운영지원</a></li>
+                                        <li><a href="#">서울북스타트</a></li>
+                                        <li><a href="#">한 주제로 함께 읽기</a></li>
+                                        <li><a href="#">지식정보취약계층 지원</a></li>
+                                        <li><a href="#">지원협력 자료실</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">정책연구개발</a>
+                                    <ul class="nav-detail">
+                                        <li><a href="#">서비스 개발</a></li>
+                                        <li><a href="#">정책연구 자료실</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">서울의 도서관</a>
+                                    <ul class="nav-detail">
+                                        <li><a href="#">도서관 찾기</a></li>
+                                        <li><a href="#">도서관 자료 통합검색</a></li>
+                                        <li><a href="#">도서관 알림마당</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="etc">
+                <ul>
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                    <li><a href="#">나의 도서관</a></li>
+                    <li><a href="#">비대면 자격확인</a></li>
+                    <li><a href="#"><img src="images/global.png" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-header">
+            <div class="top">
+                <div class="title">
+                    <h3 data-aos="fade-down" data-aos-duration="1500" >서울 도서관</h3>
+                    <span>Seoul Metropolitian Library</span>
+                </div>
+                <div class="search">
+                    <input type="text" placeholder="검색어를 입력하세요." id="search-name">
+                    <button>검색</button>
+                </div>
+            </div>
+            <div class="bottom slick">
+                <div class="slide-item">
+                    <img src="images/main_1.jpg" alt="">
+                </div>
+                <div class="slick-item">
+                    <img src="images/main_2.jpg" alt="">
+                </div>
+                <div class="slick-item">
+                    <img src="images/main_3.jpg" alt="">
+                </div>
+                <div class="slick-item">
+                    <img src="images/main_4.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="m-nav">
+        <div class="ham">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="black"></div>
+        <div class="menu">
+            <div class="login">
+                <p>로그인이 필요합니다.</p>
+                <ul>
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                </ul>
+            </div>
+            <ul class="m-menu">
+                <li><a href="#">전자도서관</a></li>
+                <li><a href="#">도서관이용</a></li>
+                <li><a href="#">신청·참여</a></li>
+                <li><a href="#">도서관 소개</a></li>
+                <li><a href="#">도서관 정책</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="quick">
+        <div class="quick-wrap">
+            <ul>
+                <li>
+                    <a href="#"><img src="images/quick-menu1.png" alt="quick-menu"></a>
+                    <span>전자책·오디오북</span>
+                </li>
+                <li>
+                    <a href="#"><img src="images/quick-menu2.png" alt="quick-menu"></a>
+                    <span>스마트도서관</span>
+                    
+                </li>
+                <li>
+                    <a href="#"><img src="images/quick-menu3.png" alt="quick-menu"></a>
+                    <span>회원증 발급</span>
+                </li>
+                <li>
+                    <a href="#"><img src="images/quick-menu4.png" alt="quick-menu"></a>
+                    <span>희망도서신청</span>
+                </li>
+                <li>
+                    <a href="#"><img src="images/quick-menu5.png" alt="quick-menu"></a>
+                    <span>프로그램신청</span>
+                </li>
+                <li>
+                    <a href="#"><img src="images/quick-menu6.png" alt="quick-menu"></a>
+                    <span>도서관 문의</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="new">
+        <div class="wrap">
+            <div class="title">
+                <h3>신간 도서</h3>
+                <span>New book</span>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content-wrap">
+                <div data-aos="fade-up" data-aos-duration="1500" data-aos-once="true" class="main-book slide">
+                    <div class="item">
+                        <a href="#">
+                            <img src="images/new/new1.jpg" alt="new">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="images/new/new2.jpg" alt="new">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="images/new/new3.jpg" alt="new">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="images/new/new4.jpg" alt="new">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="images/new/new5.jpg" alt="new">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="images/new/new6.jpg" alt="new">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="images/new/new7.jpg" alt="new">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="images/new/new8.jpg" alt="new">
+                        </a>
+                    </div>                   
+                </div>
+                <ul data-aos="fade-up" data-aos-duration="1500" class="slide-nav">
+                    <li><a href="#"><img src="images/new/nav2.jpg" alt="new"></a></li>
+                    <li><a href="#"><img src="images/new/nav3.jpg" alt="new"></a></li>
+                    <li><a href="#"><img src="images/new/nav4.jpg" alt="new"></a></li>
+                    <li><a href="#"><img src="images/new/nav5.jpg" alt="new"></a></li>
+                    <li><a href="#"><img src="images/new/nav6.jpg" alt="new"></a></li>
+                    <li><a href="#"><img src="images/new/nav7.jpg" alt="new"></a></li>
+                    <li><a href="#"><img src="images/new/nav8.jpg" alt="new"></a></li>
+                    <li><a href="#"><img src="images/new/nav1.jpg" alt="new"></a></li>
+                </ul>
+
+                <ul class="main-book-title">
+                    <li>
+                        <p>해파리 버스 : 이수현 그림책</p>
+                        <span>이수현 글·그림</span>
+                        <div class="book-tag">
+                            <a href="#">#일반</a>
+                            <a href="#">#문학</a>
+                        </div>
+                    </li>
+                    <li>
+                        <p>세계사 만물관 :역사를 바꾼 77가지 혁명적 사물들</p>
+                        <span>피에르 싱가라벨루</span>
+                        <div class="book-tag">
+                            <a href="#">#일반</a>
+                            <a href="#">#역사</a>
+                        </div>
+                    </li>
+                    <li>
+                        <p>신세계사 2</p>
+                        <span>쑨룽지 지음</span>
+                        <div class="book-tag">
+                            <a href="#">#일반</a>
+                            <a href="#">#역사</a>
+                        </div>
+                    </li>
+                    <li>
+                        <p>의회의 조레스 당의 조레스 노동자의 조레스</p>
+                        <span>노서경 지음</span>
+                        <div class="book-tag">
+                            <a href="#">#일반</a>
+                            <a href="#">#역사</a>
+                        </div>
+                    </li>
+                    <li>
+                        <p>Craft Beer : 크래프트 비어</p>
+                        <span>멜리사 콜 지음</span>
+                        <div class="book-tag">
+                            <a href="#">#일반</a>
+                            <a href="#">#문학</a>
+                        </div>
+                    </li>
+                    <li>
+                        <p>우리술 익스프레스 :와인, 위스키, 사케 못지않은 K-술의 매력</p>
+                        <span>탁재형 지음</span>
+                        <div class="book-tag">
+                            <a href="#">#일반</a>
+                            <a href="#">#문학</a>
+                        </div>
+                    </li>
+                    <li>
+                        <p>풀하우스 :메이브 빈치 소설</p>
+                        <span>메이브 빈치 지음</span>
+                        <div class="book-tag">
+                            <a href="#">#일반</a>
+                            <a href="#">#문학</a>
+                        </div>
+                    </li>
+                    <li>
+                        <p>집단상담의 기초</p>
+                        <span>장미경 지음</span>
+                        <div class="book-tag">
+                            <a href="#">#일반</a>
+                            <a href="#">#문학</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="best">
+        <div class="wrap">
+            <div class="title">
+                <h3>도서관 베스트</h3>
+                <span>Libray Best</span>
+            </div>
+            <div class="content best-slick">
+                <div class="item">
+                    <div class="book-box">
+                        <a href="#">
+                            <img src="images/best/best 1.jpg" alt="best">
+                        </a>
+                    </div>
+                    <div class="book-info">
+                        <div class="book-name">
+                            <p>나미야 잡화점의 기적</p>
+                            <span>히가시노 게이고 지음</span>
+                        </div>
+                        <div class="book-tag">
+                            <a href="#">#일반</a>
+                            <a href="#">#문학</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="book-box">
+                        <a href="#">
+                            <img src="images/best/best 2.jpg" alt="best">
+                        </a>
+                    </div>
+                    <div class="book-info">
+                        <div class="book-name">
+                            <p>파친코 : 이민진 장편소설 2</p>
+                            <span>이민진 지음</span>
+                        </div>
+                        <div class="book-tag">
+                            <a href="#">#일반</a>
+                            <a href="#">#문학</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="book-box">
+                        <a href="#">
+                            <img src="images/best/best 3.jpg" alt="best">
+                        </a>
+                    </div>
+                    <div class="book-info">
+                        <div class="book-name">
+                            <p>바깥은 여름 : 김애란 소설</p>
+                            <span>김애란 지음</span>
+                        </div>
+                        <div class="book-tag">
+                            <a href="#">#일반</a>
+                            <a href="#">#문학</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="book-box">
+                        <a href="#">
+                            <img src="images/best/best 4.jpg" alt="best">
+                        </a>
+                    </div>
+                    <div class="book-info">
+                        <div class="book-name">
+                            <p>미드나잇 라이브러리</p>
+                            <span>매트 헤이그 지음</span>
+                        </div>
+                        <div class="book-tag">
+                            <a href="#">#일반</a>
+                            <a href="#">#문학</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="book-box">
+                        <a href="#">
+                            <img src="images/best/best 5.jpg" alt="best">
+                        </a>
+                    </div>
+                    <div class="book-info">
+                        <div class="book-name">
+                            <p>소년이 온다 : 한강 장편소설</p>
+                            <span>한강 지음</span>
+                        </div>
+                        <div class="book-tag">
+                            <a href="#">#일반</a>
+                            <a href="#">#문학</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="book-box">
+                        <a href="#">
+                            <img src="images/best/best 6.jpg" alt="best">
+                        </a>
+                    </div>
+                    <div class="book-info">
+                        <div class="book-name">
+                            <p>이기적 유전자</p>
+                            <span>리처드 도킨스 지음</span>
+                        </div>
+                        <div class="book-tag">
+                            <a href="#">#일반</a>
+                            <a href="#">#자연과학</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="book-box">
+                        <a href="#">
+                            <img src="images/best/best 7.jpg" alt="best">
+                        </a>
+                    </div>
+                    <div class="book-info">
+                        <div class="book-name">
+                            <p>여행의 이유 :김영하 산문</p>
+                            <span>김영하 지음</span>
+                        </div>
+                        <div class="book-tag">
+                            <a href="#">#일반</a>
+                            <a href="#">#문학</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="book-box">
+                        <a href="#">
+                            <img src="images/best/best 8.png" alt="best">
+                        </a>
+                    </div>
+                    <div class="book-info">
+                        <div class="book-name">
+                            <p>아내를 모자로 착각한 남자</p>
+                            <span>올리버 색스 지음</span>
+                        </div>
+                        <div class="book-tag">
+                            <a href="#">#일반</a>
+                            <a href="#">#문학</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="book-box">
+                        <a href="#">
+                            <img src="images/best/best 9.jpg" alt="best">
+                        </a>
+                    </div>
+                    <div class="book-info">
+                        <div class="book-name">
+                            <p>채식주의자 :한강 연작소설</p>
+                            <span>한강 지음</span>
+                        </div>
+                        <div class="book-tag">
+                            <a href="#">#일반</a>
+                            <a href="#">#문학</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="book-box">
+                        <a href="#">
+                            <img src="images/best/best 10.jpg" alt="best">
+                        </a>
+                    </div>
+                    <div class="book-info">
+                        <div class="book-name">
+                            <p>대도시의 사랑법</p>
+                            <span>박상영 지음</span>
+                        </div>
+                        <div class="book-tag">
+                            <a href="#">#일반</a>
+                            <a href="#">#문학</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="book-box">
+                        <a href="#">
+                            <img src="images/best/best 11.jpg" alt="best">
+                        </a>
+                    </div>
+                    <div class="book-info">
+                        <div class="book-name">
+                            <p>피프티 피플</p>
+                            <span>정세랑 지음</span>
+                        </div>
+                        <div class="book-tag">
+                            <a href="#">#일반</a>
+                            <a href="#">#문학</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="book-box">
+                        <a href="#">
+                            <img src="images/best/best 12.jpg" alt="best">
+                        </a>
+                    </div>
+                    <div class="book-info">
+                        <div class="book-name">
+                            <p>미움받을 용기</p>
+                            <span>기시미 이치로, 고가 후미타케 공저</span>
+                        </div>
+                        <div class="book-tag">
+                            <a href="#">#일반</a>
+                            <a href="#">#전자책</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="librarian">
+        <div class="wrap">
+            <div class="title">
+                <h3>사서 추천 도서</h3>
+                <span>Book recommended by the Librarian</span>
+            </div>
+            <div class="content recommend-slick">
+                <div class="item">
+                    <div class="book-box">
+                        <a href="#">
+                            <img src="images/recommend/recommended 1.jpg" alt="best">
+                        </a>
+                    </div>
+                    <div class="book-info">
+                        <div class="book-name">
+                            <p>오늘도, 캠핑 :나만의 취미로 삶의 쉼표를 그리는 본격 캠핑 부추김 에세이</p>
+                            <span>밍동 지음</span>
+                        </div>
+                        <div class="book-tag">
+                            <a href="#">#일반</a>
+                            <a href="#">#예술</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="book-box">
+                        <a href="#">
+                            <img src="images/recommend/recommended 2.jpg" alt="best">
+                        </a>
+                    </div>
+                    <div class="book-info">
+                        <div class="book-name">
+                            <p>쉽게 행복해지는 사람</p>
+                            <span>댄싱스네일 글·그림</span>
+                        </div>
+                        <div class="book-tag">
+                            <a href="#">#일반</a>
+                            <a href="#">#문학</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="book-box">
+                        <a href="#">
+                            <img src="images/recommend/recommended 3.jpg" alt="best">
+                        </a>
+                    </div>
+                    <div class="book-info">
+                        <div class="book-name">
+                            <p>(The power of) now :a guide to spiritual enlightenment</p>
+                            <span>[by] Eckhart Tolle</span>
+                        </div>
+                        <div class="book-tag">
+                            <a href="#">#해외</a>
+                            <a href="#">#종교</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="book-box">
+                        <a href="#">
+                            <img src="images/recommend/recommended 4.jpg" alt="best">
+                        </a>
+                    </div>
+                    <div class="book-info">
+                        <div class="book-name">
+                            <p>행복은 주름살이 없다</p>
+                            <span>안가엘 위옹 지음</span>
+                        </div>
+                        <div class="book-tag">
+                            <a href="#">#일반</a>
+                            <a href="#">#문학</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="book-box">
+                        <a href="#">
+                            <img src="images/recommend/recommended 5.jpg" alt="best">
+                        </a>
+                    </div>
+                    <div class="book-info">
+                        <div class="book-name">
+                            <p>Happy dreams</p>
+                            <span>[by] Jia Pingwa</span>
+                        </div>
+                        <div class="book-tag">
+                            <a href="#">#문학</a>
+                            <a href="#">#해외</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="book-box">
+                        <a href="#">
+                            <img src="images/recommend/recommended 6.jpg" alt="best">
+                        </a>
+                    </div>
+                    <div class="book-info">
+                        <div class="book-name">
+                            <p>How to be Happy</p>
+                            <span>[by] Eva Woods</span>
+                        </div>
+                        <div class="book-tag">
+                            <a href="#">#문학</a>
+                            <a href="#">#해외</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="book-box">
+                        <a href="#">
+                            <img src="images/recommend/recommended 7.jpg" alt="best">
+                        </a>
+                    </div>
+                    <div class="book-info">
+                        <div class="book-name">
+                            <p>소확행 :소소하지만 확실한 행복</p>
+                            <span>배연국 지음</span>
+                        </div>
+                        <div class="book-tag">
+                            <a href="#">#일반</a>
+                            <a href="#">#자기개발</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="book-box">
+                        <a href="#">
+                            <img src="images/recommend/recommended 8.jpg" alt="best">
+                        </a>
+                    </div>
+                    <div class="book-info">
+                        <div class="book-name">
+                            <p>당신을 기억하는 밥 :사람에 지친 당신을 위한 음식 치유 에세이</p>
+                            <span>윤혜선 지음</span>
+                        </div>
+                        <div class="book-tag">
+                            <a href="#">#일반</a>
+                            <a href="#">#문학</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="data">
+        <div class="wrap">
+            <div class="notice">
+                <div class="data-title">
+                    <h3>공지사항</h3>
+                    <a href="#" class="add"></a>
+                </div>
+                <div class="content">
+                    <div class="article">
+                        <a href="#">2022 서울지식이음축제‧포럼 참여 신청 안내</a>
+                        <span>2022-10-19</span>
+                    </div>
+                    <div class="article">
+                        <a href="#">서점의날(11.11.) 기념 ‘2022 지역서점 방문 캠페인’ 개최 안내!</a>
+                        <span>2022-10-25</span>
+                    </div>
+                    <div class="article">
+                        <a href="#">[신청 안내]'나'라는 브랜드, 나만의 전자책 쓰기 강좌</a>
+                        <span>2022-10-25</span>
+                    </div>
+                    <div class="article">
+                        <a href="#">[책읽는 서울광장 협력 프로그램] 2022 서울세계도시문화축제가 온다!!</a>
+                        <span>2022-10-21</span>
+                    </div>
+                    <div class="article">
+                        <a href="#">[엠보팅] 예비엄마(임산부) 책선물 사업 '엄마 북(Book)돋움'에 가장 어울리는 BI에 투표해주세요</a>
+                        <span>2022-10-18</span>
+                    </div>
+                </div>
+            </div>
+            <div class="news">
+                <div class="data-title">
+                    <h3>보도자료</h3>
+                    <a href="#" class="add"></a>
+                </div>
+                <div class="content">
+                    <div class="article">
+                        <a href="#">'서울도서관, 시민과 함께한 10년' 특별 독서 프로그램 운영</a>
+                        <span>2022-10-26</span>
+                    </div>
+                    <div class="article">
+                        <a href="#">서울도서관, 2022 지역서점 방문 캠페인 개최</a>
+                        <span>2022-10-25</span>
+                    </div>
+                    <div class="article">
+                        <a href="#">서울도서관, `'나'라는 브랜드, 나만의 전자책 쓰기` 강좌 운영</a>
+                        <span>2022-10-25</span>
+                    </div>
+                    <div class="article">
+                        <a href="#">'책읽는 서울광장', 엄마‧아빠‧아이가 함께하는 가족 활동 프로그램 운영</a>
+                        <span>2022-10-21</span>
+                    </div>
+                    <div class="article">
+                        <a href="#">세상과 우연한 만남을 만드는 축제, 2022 서울지식이음축제·포럼 개최</a>
+                        <span>2022-10-20</span>
+                    </div>
+                </div>
+            </div>
+            <div class="autonomous-notice">
+                <div class="data-title">
+                    <h3>자치구도서관공지</h3>
+                    <a href="#" class="add"></a>
+                </div>
+                <div class="content">
+                    <div class="article">
+                        <a href="#">[11월/부모교육] 진짜 중학생을 위한 독서교육</a>
+                        <span>2022-10-26</span>
+                    </div>
+                    <div class="article">
+                        <a href="#">[금천구립독산도서관] 대숲소리 북콘서트 Ⅶ : 심혜경 작가와 함께하는 북토크 안내</a>
+                        <span>2022-10-22</span>
+                    </div>
+                    <div class="article">
+                        <a href="#">[강남구립못골도서관] 못골마을학교 제29회_엄마도 아이도 행복한 육아</a>
+                        <span>2022-10-22</span>
+                    </div>
+                    <div class="article">
+                        <a href="#">[강남구립못골도서관] 올바른 언어 습관 2교시 : 나쁜 말과 좋은 말</a>
+                        <span>2022-10-22</span>
+                    </div>
+                    <div class="article">
+                        <a href="#">[11월/행사] 11월 문화프로그램 안내</a>
+                        <span>2022-10-21</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="banner">
+        <div class="wrap banner-slick">
+            <div class="item">
+                <a href="#"><img src="images/banner/a.png" alt="banner"></a>
+            </div>
+            <div class="item">
+                <a href="#"><img src="images/banner/b.png" alt="banner"></a>
+            </div>
+            <div class="item">
+                <a href="#"><img src="images/banner/c.png" alt="banner"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="seoul">
+        <div class="wrap">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="images/seoul_link_1.png" alt="seoul_link">
+                        <span>지식이음축제</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/seoul_link_2.png" alt="seoul_link">
+                        <span>서울책보고</span>
+                    </a></li>
+                <li>
+                    <a href="#">
+                        <img src="images/seoul_link_3.png" alt="seoul_link">
+                        <span>서울의 도서관 찾기</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/seoul_link_4.png" alt="seoul_link">
+                        <span>서울의 책방 찾기</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="top">
+            <div class="top-wrap">
+                <div class="txt">
+                    <a href="#">개인정보처리방침</a>
+                    <a href="#">영상정보처리기기 운영·관리 방침</a>
+                </div>
+            </div>
+        </div>
+        <div class="wrap">
+            <div class="bottom">
+                <div class="left">
+                    <div class="logo">
+                        <img src="images/footer-logo.png" alt="logo">
+                    </div>
+                    <div class="content">
+                        <div class="word">
+                            <span>서울도서관</span>
+                            <span>서울특별시 중구 세종대로 110</span>
+                        </div>
+                        <div class="word">
+                            <span>전화번호</span>
+                            <span>02-120, 20-2133-0300</span>
+                        </div>
+                        <div class="word">
+                            <span>이용시간</span>
+                            <span>화 ~ 금 09 : 00 ~ 21 : 00 /  토, 일 09 : 00 ~ 18 : 00 / 월요일, 공휴일 휴관</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <!-- <div class="wa">
+                        <a href="#"><img src="images/wa.png" alt="wa"></a>
+                    </div> -->
+                    <ul>
+                        <li><a href="#"><img src="images/facebook.png" alt="facebook"></a></li>
+                        <li><a href="#"><img src="images/youtube.png" alt="youtube"></a></li>
+                        <li><a href="#"><img src="images/insta.png" alt="insta"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
